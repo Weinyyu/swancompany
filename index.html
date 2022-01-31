@@ -72,12 +72,9 @@
 
         <section class="footer">
             
-            <script style="text-align: center;" src="js/script.js"></script>
-                <script language="JavaScript">
-
-                var LastUpdated = document.lastModified;
-                document.writeln ("This website last updated " + LastUpdated);
-
+            <p style="text-align: center;">This page was last modified <span id="demo"></span></p>
+            <script>
+                document.getElementById("demo").innerHTML = document.lastModified;
             </script>
 
             <div class="credit"> created by <span> Swan company </span> | all rights reserved </div>
